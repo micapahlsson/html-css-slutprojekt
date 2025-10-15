@@ -1,6 +1,6 @@
 @charset "UTF-8";
 header {
-  background-color: #CB64BF;
+  background-color: #cb64bf;
   color: #000000;
   text-align: center;
   padding: 1rem;
@@ -85,7 +85,7 @@ h3 {
 }
 
 button {
-  background: #CB64BF;
+  background: #cb64bf;
   border: none;
   color: #000000;
   font-family: "cormorant";
@@ -99,7 +99,7 @@ button:hover {
 }
 
 footer {
-  background-color: #CB64BF;
+  background-color: #cb64bf;
   color: #000000;
   text-align: start;
   padding: 1rem;
@@ -168,8 +168,25 @@ h1 {
   margin: 2px;
 }
 
-.employees {
+.body-reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.body-reviews .employees {
   width: 64px;
   height: 64px;
   border: solid black 2px;
+}
+.body-reviews .rosa-review-box {
+  background-color: #F0BFEA;
+  width: 154px;
+  height: 105px;
+  margin: 8px;
+}
+.body-reviews .roslagen {
+  width: 331px;
+  height: 174px;
 }/*# sourceMappingURL=style.css.map */
