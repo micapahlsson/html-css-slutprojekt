@@ -1,35 +1,28 @@
-
-$rosa: #CB64BF; // färgvariabel 
-$vit: #FFFFFF;
+$rosa: #cb64bf; // färgvariabel
+$vit: #ffffff;
 $svart: #000000;
+$ljusrosa: #f0bfea;
 
 // Simons kod
 
 // 🔸 Header-stil
-header 
-{
+header {
   background-color: $rosa;
   color: $svart;
   text-align: center;
   padding: 1rem;
 
-  
-  h1 
-  {
-  font-family: 'Moirai One', cursive;
-  font-size: 2.5rem;
-  background: linear-gradient(45deg, #0f0f0f, #010101);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-   }
+  h1 {
+    font-family: "Moirai One", cursive;
+    font-size: 2.5rem;
+    background: linear-gradient(45deg, #0f0f0f, #010101);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
-   
-    
-     nav 
-   {
-
-            margin-top: 1rem;
+  nav {
+    margin-top: 1rem;
 
     ul {
       list-style: none;
@@ -42,37 +35,33 @@ header
       li a {
         text-decoration: none;
         color: $svart;
-        font-family: 'cormorant';
+        font-family: "cormorant";
         font-size: 1.2rem;
         transition: color 0.3s ease;
 
         &:hover {
           color: #ffe6f0;
         }
+      }
 
+      li a.active {
+        font-weight: bold;
+        color: darken($svart, 20%);
+        border-bottom: 2px solid $svart;
+      }
     }
-
-        li a.active {
-                    font-weight: bold;
-                    color: darken($svart, 20%);
-                    border-bottom: 2px solid $svart;
+  }
 }
-    } 
-    }
-}
-   
 
-
-    h3 {
-  text-align: center;      // centrerar horisontellt
-  color: $svart;            // valfri färg
-  font-family: 'cormorant', cursive;
-  margin-top: 1rem;        // avstånd från header
+h3 {
+  text-align: center; // centrerar horisontellt
+  color: $svart; // valfri färg
+  font-family: "cormorant", cursive;
+  margin-top: 1rem; // avstånd från header
   font-size: 1.5rem;
-       }
+}
 
-    
-   .packages {
+.packages {
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -90,16 +79,14 @@ header
     img {
       width: 50%;
       border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
-
-
 
     .text {
       width: 50%;
-      font-family: 'cormorant';
+      font-family: "cormorant";
       color: #000;
-      
+
       h2 {
         color: $svart;
         margin-bottom: 1rem;
@@ -116,45 +103,36 @@ header
   }
 }
 
+button {
+  background: $rosa;
+  border: none;
+  color: $svart;
+  font-family: "cormorant";
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  cursor: pointer;
 
-    button {
-      background: $rosa;
-      border: none;
-      color: $svart;
-      font-family: 'cormorant';
-      padding: 0.5rem 1rem;
-      border-radius: 5px;
-      margin-top: 0.5rem;
-      cursor: pointer;
+  &:hover {
+    background: darken($rosa, 10%);
+  }
+}
 
-      &:hover {
-        background: darken($rosa, 10%);
-      }
-    }
-  
-
-
-
-footer{
-
+footer {
   background-color: $rosa;
   color: $svart;
   text-align: start;
   padding: 1rem;
   justify-content: end;
 
-
-h1 
-  {
-  font-family: 'Moirai One', cursive;
-  font-size: 2.5rem;
-  background: linear-gradient(45deg, #0f0f0f, #010101);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-   }
-
-
+  h1 {
+    font-family: "Moirai One", cursive;
+    font-size: 2.5rem;
+    background: linear-gradient(45deg, #0f0f0f, #010101);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 // Simonas kod:
@@ -243,10 +221,45 @@ border-radius: 3px;
 }
 
 
-// Micas kod 
+// Micas kod
+
+.review-rutor1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.review-rutor2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.review-bild {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.rosa-review-box {
+background-color: $ljusrosa; 
+width: 154px;
+height: 105px;
+margin: 8px;
+}
+
+.roslagen {
+width: 331px;
+height: 174px;
+}
 
 .employees  {
   width: 64px;
   height: 64px;
   border: solid black 2px;
 }
+
+
