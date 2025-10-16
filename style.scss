@@ -1,6 +1,7 @@
 $rosa: #cb64bf; // färgvariabel
 $vit: #ffffff;
 $svart: #000000;
+$ljusrosa: #f0bfea;
 
 // Simons kod
 
@@ -186,8 +187,43 @@ h1 {
 
 // Micas kod
 
+.review-rutor1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.review-rutor2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.review-bild {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.rosa-review-box {
+background-color: $ljusrosa; 
+width: 154px;
+height: 105px;
+margin: 8px;
+}
+
+.roslagen {
+width: 331px;
+height: 174px;
+}
+
 .employees {
   width: 64px;
   height: 64px;
   border: solid black 2px;
 }
+
+
