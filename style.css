@@ -1,6 +1,6 @@
 @charset "UTF-8";
 header {
-  background-color: #CB64BF;
+  background-color: #cb64bf;
   color: #000000;
   text-align: center;
   padding: 1rem;
@@ -85,7 +85,7 @@ h3 {
 }
 
 button {
-  background: #CB64BF;
+  background: #cb64bf;
   border: none;
   color: #000000;
   font-family: "cormorant";
@@ -99,7 +99,7 @@ button:hover {
 }
 
 footer {
-  background-color: #CB64BF;
+  background-color: #cb64bf;
   color: #000000;
   text-align: start;
   padding: 1rem;
