@@ -1,4 +1,65 @@
 @charset "UTF-8";
+.startsida-wrapper h2 {
+  text-align: center;
+}
+
+.gotland-wrapper h2 {
+  text-align: center;
+}
+.gotland-wrapper img {
+  width: 393px;
+  height: 228px;
+  margin: 2px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+}
+
+.cities-row {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: left;
+  gap: 20px;
+  margin: 20px;
+}
+.cities-row section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+  text-align: center;
+}
+.cities-row img {
+  width: 120px;
+  height: 70px;
+}
+.cities-row figcaption {
+  font-size: 10px;
+}
+
+.kiruna-startsida, .göteborg-startsida, .gotland-startsida {
+  width: 95px;
+  height: 71px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+}
+
+/*  Märkte det blir 4 packages när sidan är desktop så default är 3
+.stockholm-startsida{
+  @extend %cities-startsida;
+}
+*/
+.norrsken-startsida {
+  width: 396px;
+  height: 133px;
+  margin: 2px;
+  border-radius: 3px;
+}
+
 header {
   background-color: #cb64bf;
   color: #000000;
@@ -112,67 +173,6 @@ footer h1 {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.startsida-wrapper h2 {
-  text-align: center;
-}
-
-.gotland-wrapper h2 {
-  text-align: center;
-}
-.gotland-wrapper img {
-  width: 393px;
-  height: 228px;
-  margin: 2px;
-  display: flex;
-  flex-direction: column;
-  border-radius: 3px;
-}
-
-.cities-row {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: left;
-  gap: 20px;
-  margin: 20px;
-}
-.cities-row section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 120px;
-  text-align: center;
-}
-.cities-row img {
-  width: 120px;
-  height: 70px;
-}
-.cities-row figcaption {
-  font-size: 10px;
-}
-
-.kiruna-startsida, .göteborg-startsida, .gotland-startsida {
-  width: 95px;
-  height: 71px;
-  margin: 20px;
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  justify-content: center;
-  border-radius: 3px;
-}
-
-/*  Märkte det blir 4 packages när sidan är desktop så default är 3
-.stockholm-startsida{
-  @extend %cities-startsida;
-}
-*/
-.norrsken-startsida {
-  width: 396px;
-  height: 133px;
-  margin: 2px;
-  border-radius: 3px;
 }
 
 .title-reviews {

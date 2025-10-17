@@ -3,6 +3,8 @@ $vit: #ffffff;
 $svart: #000000;
 $ljusrosa: #f0bfea;
 
+@import "_home.scss";
+
 // Simons kod
 
 // 🔸 Header-stil
@@ -133,90 +135,6 @@ footer {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-}
-
-// Simonas kod:
-
-.startsida-wrapper {
-  h2 {
-    text-align: center;
-  }
-}
-.gotland-wrapper {
-  h2 {
-    text-align: center;
-  }
-
-  img {
-    width: 393px;
-    height: 228px;
-    margin: 2px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 3px;
-  }
-}
-
-.cities-row {
-  display: flex;
-  flex-wrap: nowrap; //för att placera bilderna i rad utan brytning
-  justify-content: left;
-  gap: 20px;
-  margin: 20px;
-
-  section {
-    //alla sections i cities-row klassen får en placeholder
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 120px;
-    text-align: center;
-  }
-
-  img {
-    width: 120px;
-    height: 70px;
-  }
-
-  figcaption {
-    font-size: 10px;
-  }
-}
-
-//Placeholder för alla städer med samma mått
-%cities-startsida {
-  width: 95px;
-  height: 71px;
-  margin: 20px;
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  justify-content: center;
-  border-radius: 3px;
-}
-
-//Använder extend för att återanvända redan befitliga stilar istället för upprepning
-//Extend placeholdern inom varje klass som återanvänds
-.gotland-startsida {
-  @extend %cities-startsida;
-}
-.göteborg-startsida {
-  @extend %cities-startsida;
-}
-.kiruna-startsida {
-  @extend %cities-startsida;
-}
-
-/*  Märkte det blir 4 packages när sidan är desktop så default är 3
-.stockholm-startsida{
-  @extend %cities-startsida;
-}
-*/
-.norrsken-startsida {
-  width: 396px;
-  height: 133px;
-  margin: 2px;
-  border-radius: 3px;
 }
 
 // Micas kod
