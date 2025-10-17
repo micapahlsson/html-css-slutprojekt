@@ -13,6 +13,14 @@ header h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+header .logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 40px;
+  height: 40px;
+  gap: 5px;
+}
 header nav {
   margin-top: 1rem;
 }
