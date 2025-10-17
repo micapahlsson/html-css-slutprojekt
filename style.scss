@@ -137,52 +137,86 @@ footer {
 
 // Simonas kod:
 
-h1 {
-  text-align: center;
+.startsida-wrapper {
+  h2 {
+    text-align: center;
+  }
 }
-.startbild-startsida {
-  width: 393px;
-  height: 228px;
-  margin: 2px;
+.gotland-wrapper {
+  h2 {
+    text-align: center;
+  }
+
+  img {
+    width: 393px;
+    height: 228px;
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+  }
+}
+
+.cities-row {
   display: flex;
-  flex-direction: column;
+  flex-wrap: nowrap; //för att placera bilderna i rad utan brytning
+  justify-content: left;
+  gap: 20px;
+  margin: 20px;
+
+  section {
+    //alla sections i cities-row klassen får en placeholder
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+    text-align: center;
+  }
+
+  img {
+    width: 120px;
+    height: 70px;
+  }
+
+  figcaption {
+    font-size: 10px;
+  }
 }
-.gotland-startsida {
+
+//Placeholder för alla städer med samma mått
+%cities-startsida {
   width: 95px;
   height: 71px;
-  margin: 2px;
-  border: 2px solid black;
+  margin: 20px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+}
+
+//Använder extend för att återanvända redan befitliga stilar istället för upprepning
+//Extend placeholdern inom varje klass som återanvänds
+.gotland-startsida {
+  @extend %cities-startsida;
 }
 .göteborg-startsida {
-  width: 95px;
-  height: 71px;
-  margin: 2px;
-  border: 2px solid black;
-  display: flex;
-  flex-direction: column;
+  @extend %cities-startsida;
 }
 .kiruna-startsida {
-  width: 95px;
-  height: 71px;
-  margin: 2px;
-  border: 2px solid black;
-  display: flex;
-  flex-direction: column;
+  @extend %cities-startsida;
 }
-.stockholm-startsida {
-  width: 95px;
-  height: 71px;
-  margin: 2px;
-  border: 2px solid black;
-  display: flex;
-  flex-direction: column;
+
+/*  Märkte det blir 4 packages när sidan är desktop så default är 3
+.stockholm-startsida{
+  @extend %cities-startsida;
 }
+*/
 .norrsken-startsida {
   width: 396px;
   height: 133px;
   margin: 2px;
+  border-radius: 3px;
 }
 
 // Micas kod
