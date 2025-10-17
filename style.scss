@@ -2,11 +2,9 @@
 @import "_aboutus.scss";
 @import "_contactus.scss";
 @import "_home.scss";
-@import "packages.scss";
+@import "_packages.scss";
 @import "_reviews.scss";
-@import "_variables.scss"
-
-// Simons kod
+@import "_variables.scss";
 
 // 🔸 Header-stil
 header {
@@ -45,7 +43,7 @@ header {
         &:hover {
           color: #ffe6f0;
         }
-      }
+      
 
       li a.active {
         font-weight: bold;
@@ -54,7 +52,10 @@ header {
       }
     }
   }
+
 }
+
+
 
 h3 {
   text-align: center; // centrerar horisontellt
@@ -140,3 +141,4 @@ footer {
 
 
 
+}

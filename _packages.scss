@@ -1,0 +1,56 @@
+.packages {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem 4rem;
+
+  h1 {
+    text-align: center;
+  }
+
+  .package {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    img {
+      width: 50%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .text {
+      width: 50%;
+      font-family: "cormorant";
+      color: #000;
+
+      h2 {
+        color: $svart;
+        margin-bottom: 1rem;
+      }
+      p {
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+    }
+
+    &.reverse {
+      flex-direction: row;
+    }
+  }
+}
+
+button {
+  background: $rosa;
+  border: none;
+  color: $svart;
+  font-family: "cormorant";
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  cursor: pointer;
+
+  &:hover {
+    background: darken($rosa, 10%);
+  }
+}
