@@ -1,4 +1,119 @@
 @charset "UTF-8";
+header {
+  background-color: #cb64bf;
+  color: #000000;
+  text-align: center;
+  padding: 1rem;
+}
+header h1 {
+  font-family: "Moirai One", cursive;
+  font-size: 2.5rem;
+  background: linear-gradient(45deg, #0f0f0f, #010101);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+header nav {
+  margin-top: 1rem;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "cormorant";
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+header nav ul li a:hover {
+  color: #ffe6f0;
+}
+header nav ul li a.active {
+  font-weight: bold;
+  color: black;
+  border-bottom: 2px solid #000000;
+}
+
+h3 {
+  text-align: center;
+  color: #000000;
+  font-family: "cormorant", cursive;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.packages {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem 4rem;
+}
+.packages h1 {
+  text-align: center;
+}
+.packages .package {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.packages .package img {
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.packages .package .text {
+  width: 50%;
+  font-family: "cormorant";
+  color: #000;
+}
+.packages .package .text h2 {
+  color: #000000;
+  margin-bottom: 1rem;
+}
+.packages .package .text p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.packages .package.reverse {
+  flex-direction: row;
+}
+
+button {
+  background: #cb64bf;
+  border: none;
+  color: #000000;
+  font-family: "cormorant";
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+button:hover {
+  background: rgb(188.6956521739, 63.3043478261, 174.0869565217);
+}
+
+footer {
+  background-color: #cb64bf;
+  color: #000000;
+  text-align: start;
+  padding: 1rem;
+  justify-content: end;
+}
+footer h1 {
+  font-family: "Moirai One", cursive;
+  font-size: 2.5rem;
+  background: linear-gradient(45deg, #0f0f0f, #010101);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .employee-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -18,8 +133,7 @@
 .employee img {
   width: 80px;
   height: 80px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border: solid black 3px;
 }
 
@@ -160,14 +274,14 @@
 }
 
 .rosa-review-box {
-  background-color: #f0bfea;
-  width: 170px;
+  background-color: #f0bfea #f0bfea;
+  width: 180px;
   height: 160px;
   margin: 8px;
 }
 
 .roslagen {
-  width: 355px;
+  width: 400px;
   height: 174px;
 }
 
