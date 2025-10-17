@@ -1,0 +1,68 @@
+.employee-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 40px;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.employee {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.employee img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border: solid black 3px;
+}
+
+.employee .info {
+  font-size: 0.95em;
+  line-height: 1.4;
+}
+
+.aboutus-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.aboutus-main h1 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.aboutus-main p {
+  text-align: center;
+  line-height: 1.6;
+  max-width: 800px;
+}
+
+@media (min-width: 768px) {
+  .employee-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 900px;
+  }
+
+  .employee {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .employee img {
+    margin-right: 15px;
+    margin-bottom: 0;
+  }
+}
