@@ -114,9 +114,25 @@ footer h1 {
   -webkit-text-fill-color: transparent;
 }
 
+.intro_1 {
+  font-size: x-large;
+}
+
+.aboutus-main p {
+  font-size: x-large;
+}
+
+.employee_title {
+  font-size: 2.2em;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
 .employee-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 30px;
   margin-top: 40px;
   max-width: 900px;
@@ -126,15 +142,18 @@ footer h1 {
 
 .employee {
   display: flex;
-  align-items: flex-start;
-  gap: 15px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
 }
 
 .employee img {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  border: solid black 3px;
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
 }
 
 .employee .info {
@@ -165,19 +184,7 @@ footer h1 {
 
 @media (min-width: 768px) {
   .employee-grid {
-    display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    max-width: 900px;
-  }
-  .employee {
-    flex-direction: row;
-    align-items: flex-start;
-    text-align: left;
-  }
-  .employee img {
-    margin-right: 15px;
-    margin-bottom: 0;
   }
 }
 .startsida-wrapper h2 {
@@ -247,12 +254,15 @@ footer h1 {
 
 .review-rutor1 {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  margin: 8px;
+  align-items: center;
 }
 
 .review-rutor2 {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -261,152 +271,35 @@ footer h1 {
 .review-rutor3 {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 8px;
 }
 
 .review-bild {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
 .rosa-review-box {
-  background-color: #f0bfea #f0bfea;
-  width: 180px;
+  background-color: #f0bfea;
+  width: 327px;
   height: 160px;
   margin: 8px;
+  box-sizing: border-box;
+}
+.rosa-review-box p {
+  font-family: "cormorant";
 }
 
-.roslagen {
-  width: 400px;
-  height: 174px;
-}
-
-.körsbär {
-  width: 355px;
-  height: 174px;
+.körsbär, .roslagen {
+  width: 670px;
+  height: 370px;
 }
 
 .review-text {
   word-wrap: break-word;
-}
-
-header {
-  background-color: #cb64bf;
-  color: #000000;
-  text-align: center;
-  padding: 1rem;
-}
-header h1 {
-  font-family: "Moirai One", cursive;
-  font-size: 2.5rem;
-  background: linear-gradient(45deg, #0f0f0f, #010101);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-header nav {
-  margin-top: 1rem;
-}
-header nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  padding: 0;
-  margin: 0;
-}
-header nav ul li a {
-  text-decoration: none;
-  color: #000000;
-  font-family: "cormorant";
-  font-size: 1.2rem;
-  transition: color 0.3s ease;
-}
-header nav ul li a:hover {
-  color: #ffe6f0;
-}
-header nav ul li a.active {
-  font-weight: bold;
-  color: black;
-  border-bottom: 2px solid #000000;
-}
-
-h3 {
-  text-align: center;
-  color: #000000;
-  font-family: "cormorant", cursive;
-  margin-top: 1rem;
-  font-size: 1.5rem;
-}
-
-.packages {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  padding: 2rem 4rem;
-}
-.packages h1 {
-  text-align: center;
-}
-.packages .package {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-.packages .package img {
-  width: 50%;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-.packages .package .text {
-  width: 50%;
-  font-family: "cormorant";
-  color: #000;
-}
-.packages .package .text h2 {
-  color: #000000;
-  margin-bottom: 1rem;
-}
-.packages .package .text p {
-  font-size: 1rem;
-  line-height: 1.6;
-}
-.packages .package.reverse {
-  flex-direction: row;
-}
-
-button {
-  background: #cb64bf;
-  border: none;
-  color: #000000;
-  font-family: "cormorant";
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  margin-top: 0.5rem;
-  cursor: pointer;
-}
-button:hover {
-  background: rgb(188.6956521739, 63.3043478261, 174.0869565217);
-}
-
-footer {
-  background-color: #cb64bf;
-  color: #000000;
-  text-align: start;
-  padding: 1rem;
-  justify-content: end;
-}
-footer h1 {
-  font-family: "Moirai One", cursive;
-  font-size: 2.5rem;
-  background: linear-gradient(45deg, #0f0f0f, #010101);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

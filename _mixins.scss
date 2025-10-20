@@ -1,2 +1,9 @@
+// mixins lades till 17/10
 
-// här ska vi göra något roligt sen :P
+@mixin flex-center-row-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
