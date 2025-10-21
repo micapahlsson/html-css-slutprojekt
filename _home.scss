@@ -1,30 +1,42 @@
 @use "mixins";
 
-.startsida-title {
-  h2 {
-    text-align: center;
-    font-family: "cormorant";
-  }
-}
-.visby-startbild {
+.intro-section {
+  .intro-container {
    display: flex;
    flex-direction: column;
+   justify-content: center;
    align-items: center;
+   gap: 20px;
+   padding: 10px;
+  }
 
-  img {
-    width: 1200px;
-    height: 500px;
+    img {
+    width: 500px;
+    height: 200px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
+    transition: all 0.3s ease;  
+  } 
+}
+
+.intro-text {
+  h2{
+    text-align: center;
+    font-family: "Cormorant";
   }
-} 
+  p{
+  text-align: center;
+  font-style:normal;
+  font-size:medium;
+  width: 400px;
+  }
+}
 
 .Triply-package-title {
    
     h2 {
     font-family: "Cormorant";
-    text-align:center;
+    text-align: center;
     }
 }
 
@@ -50,17 +62,16 @@
   }
 
    a:hover img {
-    transform: scale(1.1);   //Ger en inzoomning på bilderna vid
+    transform: scale(1.1);   //Ger en inzoomning på bilderna vid hover
     cursor: pointer;  
    }
 
    a:hover figcaption {
    transform: scale(1.2);
-   font-weight: bold;     
+   font-weight:lighter;     
    cursor: pointer;       
    transition: 0.3s ease; 
 }
-
 }
 
 .norrsken-startsida {
@@ -69,32 +80,43 @@
   align-items: center; 
 
    img {
-    width: 1500px;
-    height: 300px;
+    width: 560px;
+    height: 150px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
+    //transition: all 0.3s ease;//  
   }
 }
 
-@media (max-width: 768px) {
+// Media queries for larger screens
+@media (min-width: 768px) {
+  .intro-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
 
-.visby-startbild img {
-width: 560px;
-height: 300px;
-}
+.intro-container img{
+    width: 1000px;
+    height: 450px;
+    margin-right: 500px;
+  }
 
-.norrsken-startsida img {
-width: 560px;
-height: 200px;
-}
-
-.cities-row img {
- width: 150px;
- height: 120px;
- width: 20px;
- width: 20px;
-}
-}
-
+  .intro-text h2,p {
+    margin-left: 900px;
+    max-width: 400px;
   
+    }
+
+  .norrsken-startsida img {
+    width: 1520px;
+    height: 250px;
+    border-radius: 0px;
+  }
+
+  .cities-row img {
+    width: 260px;
+    height: 200px;
+  }
+}
