@@ -1,24 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Triply Sweden</title>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Moirai+One&display=swap"
-      rel="stylesheet"/>
+      rel="stylesheet"
+    />
   </head>
-   <header>
-    <div class="logos">
-   <img src="images icons/2175193.png">
-   <img src="images icons/free-instagram-logo-icon-3497-thumb.png">
-   <img src="images icons/free-youtube-icon-105-thumb.png">
-   <img src="images icons/tiktok-logo-tiktok-logo-transparent-tiktok-icon-transparent-free-free-png.webp">
 
-    </div>
+  <body>
+    <header>
+      <div class="logos">
+        <img src="images icons/2175193.png" />
+        <img src="images icons/free-instagram-logo-icon-3497-thumb.png" />
+        <img src="images icons/free-youtube-icon-105-thumb.png" />
+        <img src="images icons/tiktok-logo-tiktok-logo-transparent-tiktok-icon-transparent-free-free-png.webp"/>
+      </div>
+
       <h1>Triply Sweden</h1>
-      <br />
+
+      <!-- 🔸 Dold checkbox som styr menyn -->
+      <input type="checkbox" id="menu-toggle" />
+
+      <!-- 🔸 Label = hamburgarikonen -->
+      <label for="menu-toggle" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
       <nav>
         <ul>
           <li><a href="home.html">Home</a></li>
@@ -29,68 +42,105 @@
         </ul>
       </nav>
     </header>
-  
-    <body>
-   
+
     <main>
       <section class="packages">
         <h1>Våra paket</h1>
+
+        <!-- 🔹 Kiruna -->
         <div class="package">
           <div class="text">
             <h2>Kiruna – Norrskenspaketet</h2>
+            <h3>Pris: från 4 990 kr per person</h3>
+            <h4>Upplev magiska nätter under norrskenet!</h4>
             <p>
-              Upplev magiska nätter under norrskenet! Bo på Ishotellet, åk
-              hundspann och ät middag i isbaren.
+              Bo på det berömda Ishotellet i Jukkasjärvi, åk hundspann över de
+              snötäckta vidderna och avsluta kvällen med en trerättersmiddag i
+              isbaren. En oförglömlig naturupplevelse i Sveriges nordligaste
+              stad!
             </p>
+            <p><strong>Ingår:</strong> 2 nätter på hotell med frukost, hundspannstur, norrskensjakt.</p>
             <button>Läs mer</button>
-            <button>Boka Nu</button>
+            <button>Boka nu</button>
           </div>
           <img src="images packages/kiruna.jpg" alt="Norrsken i Kiruna" />
         </div>
 
+        <!-- 🔹 Stockholm -->
         <div class="package reverse">
           <img src="images packages/stockholm.jpg" alt="Stockholms skärgård" />
           <div class="text">
             <h2>Stockholm – Skärgårdsäventyr</h2>
+            <h3>Pris: från 3 490 kr per person</h3>
+            <h4>En sommarweekend i hjärtat av skärgården</h4>
             <p>
               Kryssa mellan öarna, paddla kajak och njut av färsk fisk vid
-              havet. Perfekt för en sommarweekend.
+              havet. Koppla av på ett mysigt pensionat i Sandhamn och upplev
+              Stockholms vackraste sidor med båt, bad och natur.
             </p>
+            <p><strong>Ingår:</strong> 2 nätter på hotell med frukost, båtutflykt, kajaktur, middag på skärgårdskrog.</p>
             <button>Läs mer</button>
-            <button>Boka Nu</button>
+            <button>Boka nu</button>
           </div>
         </div>
 
+        <!-- 🔹 Åre -->
         <div class="package">
           <div class="text">
             <h2>Åre – Vinterpaketet</h2>
+            <h3>Pris: från 5 290 kr per person</h3>
+            <h4>Skidåkning, spa och after ski i fjällmiljö</h4>
             <p>
-              Tre dagar med skidåkning, spa och after ski i fjällmiljö. Bo på
-              Åre Mountain Lodge med helpension.
+              Tre dagar fyllda med skidåkning, spa och god mat. Bo på Åre
+              Mountain Lodge med helpension, koppla av i bastun och njut av den
+              bästa after skin i Jämtlands fjäll.
             </p>
+            <p><strong>Ingår:</strong> 3 nätter på hotell med frukost, liftkort, frukost & middag, spa-entré.</p>
             <button>Läs mer</button>
-            <button>Boka Nu</button>
+            <button>Boka nu</button>
           </div>
           <img src="images packages/are.jpg" alt="Åre fjäll" />
         </div>
 
+        <!-- 🔹 Göteborg -->
         <div class="package reverse">
           <img src="images packages/goteborg.jpg" alt="Göteborg" />
           <div class="text">
             <h2>Göteborg – Familjepaketet</h2>
+            <h3>Pris: från 3 190 kr per person</h3>
+            <h4>Roliga dagar för hela familjen!</h4>
             <p>
-              Besök Liseberg, Universeum och njut av shopping och god mat i
-              stadens hjärta.
+              Besök Liseberg, Universeum och stadens akvarium. Avsluta dagen med
+              shopping i Nordstan och middag på Avenyn. Ett perfekt paket för
+              barnfamiljer som vill kombinera nöje och avkoppling.
             </p>
+            <p><strong>Ingår:</strong> 2 nätter på hotell, entré till Liseberg & Universeum, frukostbuffé.</p>
             <button>Läs mer</button>
-            <button>Boka Nu</button>
+            <button>Boka nu</button>
           </div>
         </div>
       </section>
     </main>
 
-    <footer>
-      <h1>Triply</h1>
-    </footer>
+   <footer class="footer">
+  <div class="footer-left">
+    <h2>Triply Sweden</h2>
+    <p>© 2025 Triply Sweden. All rights reserved.</p>
+  </div>
+
+  <div class="footer-center">
+    <a href="home.html">Home</a>
+    <a href="packages.html">Services</a>
+    <a href="aboutus.html">About us</a>
+    <a href="contactus.html">Contact</a>
+    <a href="reviews.html">Reviews</a>
+  </div>
+
+  <div class="footer-right">
+    <p>Chat with us!</p>
+    <img src="images icons/unnamed.png" alt="Chat icon" />
+  </div>
+</footer>
+
   </body>
 </html>
