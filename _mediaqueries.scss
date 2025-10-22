@@ -1,0 +1,248 @@
+// 🔸 DESKTOP-VERSION
+@media (min-width: 768px) {
+
+  /* ---------------- HEADER ---------------- */
+  header {
+    text-align: left;
+
+    .menu-icon {
+      display: none;
+    }
+
+    nav {
+      display: block !important;
+      position: static;
+      background: none;
+
+      ul {
+        flex-direction: row;
+        justify-content: end;
+        gap: 4rem;
+        margin: 0;
+
+        li a {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+
+  /* ---------------- REVIEW PAGE ---------------- */
+  main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
+
+  .title-reviews {
+    font-size: 2.3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .review-section {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+    flex-wrap: nowrap;
+  }
+
+  .review-rutor1,
+  .review-rutor2,
+  .review-rutor3 {
+    display: flex;
+    flex-direction: column;
+    flex: 1.2 1 0%;
+    gap: 1rem;
+  }
+
+  .rosa-review-box {
+    background-color: $ljusrosa;
+    padding: 18px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    font-size: 1rem;
+  }
+
+  .review-bild {
+    flex: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .roslagen,
+  .körsbär,
+  .lappland {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  figcaption {
+    text-align: left;
+    margin-top: 0.1rem;
+    font-size: 0.95rem;
+    color: #444;
+  }
+
+  /* ---------------- SERVICES PAGE ---------------- */
+  .packages {
+    padding: 4rem 8rem;
+    gap: 5rem;
+
+    h1 {
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+    }
+
+    .package {
+      display: flex;
+      align-items: center;
+      gap: 4rem;
+
+      img {
+        width: 45%;
+        max-width: 550px;
+        border-radius: 20px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+          transform: scale(1.03);
+          box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+        }
+      }
+
+      .text {
+        width: 55%;
+
+        h2 {
+          font-size: 2rem;
+          margin-bottom: 1rem;
+        }
+
+        p {
+          font-size: 1.1rem;
+          line-height: 1.8;
+          color: #333;
+        }
+
+        button {
+          padding: 0.7rem 1.5rem;
+          margin-right: 1rem;
+          font-size: 1rem;
+          transition: transform 0.2s ease;
+
+          &:hover {
+            transform: translateY(-2px);
+          }
+        }
+      }
+
+      &.reverse {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+
+  /* ---------------- HOME PAGE ---------------- */
+  .intro-section {
+    .intro-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+
+      img {
+        width: 800px;
+        height: 450px;
+        margin: 0;
+        flex-shrink: 0;
+      }
+    }
+
+    .intro-text p {
+      font-size: 1.3rem;
+      text-align: center;
+    }
+  }
+
+  .cities-row img {
+    width: 260px;
+    height: 200px;
+  }
+
+  /* ---------------- ABOUT US PAGE ---------------- */
+  .employee-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* ---------------- CONTACT PAGE ---------------- */
+  .contact-page {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+
+    .contact-form,
+    .contact-info {
+      flex: 1 1 400px;
+      max-width: 500px;
+    }
+
+    .contact-info {
+      text-align: center;
+
+      img {
+        display: block;
+        margin: 0 auto 15px auto;
+      }
+    }
+  }
+
+  /* ---------------- FOOTER ---------------- */
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+
+    .footer-left {
+      order: 1;
+      text-align: left;
+    }
+
+    .footer-center {
+      order: 2;
+      justify-content: center;
+    }
+
+    .footer-right {
+      order: 3;
+      text-align: right;
+
+      p {
+        display: block;
+      }
+    }
+  }
+}
+
+/* 🔸 TABLET-ANPASSNING (max 1254px) */
+@media (max-width: 1254px) {
+  .intro-section {
+    .intro-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+}

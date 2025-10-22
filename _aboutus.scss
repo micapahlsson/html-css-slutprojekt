@@ -27,6 +27,7 @@ body {
   max-width: 900px;
   margin: 40px auto;
   padding: 0 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .employee {
@@ -70,9 +71,4 @@ body {
   max-width: 800px;
 }
 
-@media (min-width: 768px) {
-  .employee-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
 

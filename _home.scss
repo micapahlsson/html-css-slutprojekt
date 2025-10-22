@@ -11,8 +11,8 @@
   }
 
     img {
-    width: 500px;
-    height: 200px;
+    width: 550px;
+    height: 300px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;  
@@ -48,15 +48,15 @@
 
    a {
     text-decoration: none; // tar bort the underline som tillkommer med <a>
-    color: inherit;   // makes the caption text keep its color
+    color: inherit;   // gör att the caption behåller sin färg
    }
     
     img {
-        @include mixins.cities-startsida;  //Använder extend för att återanvända redan befitliga stilar istället för upprepning
+      @include mixins.cities-startsida;  //Använder extend för att återanvända redan befitliga stilar istället för upprepning
     }
 
     figcaption {
-    font-size: 13px;
+    font-size: 17px;
     font-family: "Cormorant";
     text-align: center;
   }
@@ -74,49 +74,4 @@
 }
 }
 
-.norrsken-startsida {
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
 
-   img {
-    width: 560px;
-    height: 150px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    //transition: all 0.3s ease;//  
-  }
-}
-
-// Media queries for larger screens
-@media (min-width: 768px) {
-  .intro-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-  }
-
-.intro-container img{
-    width: 1000px;
-    height: 450px;
-    margin-right: 500px;
-  }
-
-  .intro-text h2,p {
-    margin-left: 900px;
-    max-width: 400px;
-  
-    }
-
-  .norrsken-startsida img {
-    width: 1520px;
-    height: 250px;
-    border-radius: 0px;
-  }
-
-  .cities-row img {
-    width: 260px;
-    height: 200px;
-  }
-}

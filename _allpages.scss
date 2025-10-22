@@ -1,4 +1,4 @@
-// 🔸 HEADER (mobil först)
+// HEADER (mobil först)
 header {
   background-color: $rosa;
   color: $svart;
@@ -6,7 +6,7 @@ header {
   padding: 1rem;
   position: relative;
 
-  // 🔹 LOGOS
+  // LOGOS
   .logos {
     display: flex;
     flex-direction: row;
@@ -19,7 +19,7 @@ header {
     }
   }
 
-  // 🔹 RUBRIK
+  // RUBRIK
   h1 {
     font-family: "Moirai One", cursive;
     font-size: 3.5rem;
@@ -30,7 +30,7 @@ header {
     margin: 0.5rem 0;
   }
 
-  // 🔹 HAMBURGERMENY
+  // HAMBURGERMENY
   #menu-toggle {
     display: none;
   }
@@ -57,7 +57,7 @@ header {
     }
   }
 
-  // 🔹 NAVIGATION
+  // NAVIGATION
   nav {
     position: absolute;
     top: 60px;
@@ -97,12 +97,12 @@ header {
     }
   }
 
-  // 🔹 När checkboxen är ikryssad → visa menyn
+  // När checkboxen är ikryssad → visa menyn
   #menu-toggle:checked ~ nav {  
     display: flex;
   }
 
-  // 🔹 När checkboxen är ikryssad → animera hamburgaren till ett kryss
+  // När checkboxen är ikryssad → animera hamburgaren till ett kryss
   #menu-toggle:checked + .menu-icon span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
   }
@@ -116,7 +116,29 @@ header {
   }
 }
 
-// 🔸 FOOTER (mobil först)
+
+/* Style the search box inside the navigation bar */
+.topnav {
+  display: flex;
+  justify-content: flex-end; /* sprider ut innehållet */
+  position: absolute;
+  padding: 10px 20px;
+  top: 3px;
+  right: 40px;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 17px;
+  width: 180px;
+}
+
+// FOOTER (mobil först)
 .footer {
   background-color: $rosa;
   color: $svart;
@@ -129,7 +151,7 @@ header {
   gap: 1.5rem;
   border-top: 2px solid rgba(0, 0, 0, 0.1);
 
-  // 🔹 Vänster sektion
+  // Vänster sektion
   .footer-left {
     h2 {
       font-family: "Moirai One", cursive;
@@ -146,18 +168,18 @@ header {
     }
   }
 
-  // 🔹 Mittensektionen (länkar)
+  // Mittensektionen (länkar)
   .footer-center {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
     margin-top: auto;
-
+   
     a {
       text-decoration: none;
       color: $svart;
-      font-size: 1rem;
+      font-size: 1.2rem;
       transition: color 0.2s ease;
 
       &:hover {
@@ -166,7 +188,7 @@ header {
     }
   }
 
-  // 🔹 Höger sektion (chat)  
+  // Höger sektion (chat)  
   .footer-right {
     text-align: center;
 
@@ -176,8 +198,8 @@ header {
     }
 
     img {
-      width: 45px;
-      height: 45px;
+      width: 85px;
+      height: 75px;
       transition: transform 0.2s ease;
       cursor: pointer;
 
@@ -187,7 +209,7 @@ header {
     }
   }
 
-  // 🔹 Ordning för MOBILE 📱
+  // Ordning för MOBILE 
   .footer-right { order: 1; }
   .footer-center { order: 2; }
   .footer-left { order: 3; }
@@ -197,48 +219,4 @@ header {
     display: none;
   }
 
-  // 🔹 Desktop-layout 💻
-  @media (min-width: 768px) {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    text-align: left;
-
-    .footer-left { order: 1; text-align: left; }
-    .footer-center { order: 2; justify-content: center; }
-    .footer-right { order: 3; text-align: right; }
-
-    // Visa chat-texten igen på desktop
-    .footer-right p {
-      display: block;
-    }
-  }
-}
-
-// 🔸 DESKTOP-VERSION
-@media (min-width: 768px) {
-  header {
-    text-align: left;
-
-    .menu-icon {
-      display: none;
-    }
-
-    nav {
-      display: block !important;
-      position: static;
-      background: none;
-
-      ul {
-        flex-direction: row;
-        justify-content: end;
-        gap: 4rem;
-        margin: 0;
-
-        li a {
-          font-size: 1.6rem;
-        }
-      }
-    }
-  }
 }

@@ -2,26 +2,43 @@
 <html lang="en">
 
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
     <link
 
-      href="https://fonts.googleapis.com/css2?family=Moirai+One&display=swap" rel="stylesheet" />
+      href="https://fonts.googleapis.com/css2?family=Moirai+One&display=swap" rel="stylesheet">
 
   </head>
 
+  <body>
+
    <header>
     <div class="logos">
-   <img src="images icons/2175193.png">
-   <img src="images icons/free-instagram-logo-icon-3497-thumb.png">
-   <img src="images icons/free-youtube-icon-105-thumb.png">
-   <img src="images icons/tiktok-logo-tiktok-logo-transparent-tiktok-icon-transparent-free-free-png.webp">
+   <img src="./images-icons/2175193.png" alt="icon link to facebook">
+   <img src="./images-icons/free-instagram-logo-icon-3497-thumb.png" alt="icon link to Instagram">
+   <img src="./images-icons/free-youtube-icon-105-thumb.png" alt="icon link to youtube">
+   <img src="./images-icons/tiktok-logo-tiktok-logo-transparent-tiktok-icon-transparent-free-free-png.webp" alt="icon link to tiktok">
 
     </div>
       <h1>Triply Sweden</h1>
-      <br />
+
+      <!-- 🔸 Dold checkbox som styr menyn -->
+      <input type="checkbox" id="menu-toggle">
+
+      <!-- 🔸 Label = hamburgarikonen -->
+      <label for="menu-toggle" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <div class="topnav">
+        <input type="text" placeholder="Search...">
+    </div>
+
+      <br>
       <nav>
         <ul>
           <li><a href="home.html" class="active">Home</a></li>
@@ -32,20 +49,20 @@
         </ul>
       </nav>
     </header>
-  <body>
+
+  <main>
 
   <section class="intro-section">
     <div class="intro-container">
-      <img src="./images-startsida/startbild.png" alt="Gotland"/>
+      <img src="./images-startsida/startbild.png" alt="Gotland">
     <div class="intro-text">
         <h2> ❀ Welcome to Triply Sweden ❀</h2>
         <p>Whether you're a curious local looking to rediscover hidden gems or
-          or a traveler ready to explore the heart of Scandinavia, Triply Sweden is your
-          trusted companion for planning unforgettable Swedish adventures.
-          From breathtaking archipelagos to cozy mountain towns, vibrant cities to 
+          a traveler ready to explore the heart of Scandinavia,</p> <p>Triply Sweden is your
+          trusted companion for planning unforgettable Swedish adventures. </p>
+          <p>From breathtaking archipelagos to cozy mountain towns, vibrant cities to 
           serene forest escapes — we help you uncover the best of Sweden, tailored 
-          to your interests, pace, and budget!
-        </p>
+          to your interests, pace, and budget!</p>
       </div>
     </div>
   </section>
@@ -59,49 +76,70 @@
       <section class="Kiruna-startsida">
         <a href="packages.html">
         <figure>
-      <img src="./images packages/kiruna.jpg" alt="Bild på norrsken i Kiruna"/>
+      <img src="./images-packages/kiruna.jpg" alt="Northern Lights in Kiruna, Sweden">
        <figcaption>❀ Kiruna ❀</figcaption> 
-        </a>
-        </figure>
-      </section>
+       </a>
+      </figure>
+    </section>
 
       <section class="Stockholm-startsida">
         <a href="packages.html">
         <figure>
-      <img src="./images packages/stockholm.jpg" alt="Bild av Stockholms skärrgård"/>
+      <img src="./images-packages/stockholm.jpg" alt="Archipelago in Stockholm">
       <figcaption>❀ Stockholm ❀</figcaption>
       </a>
-        </figure>
-      </section>
+    </figure>
+  </section>
 
       <section class="Åre-startsida">
         <a href="packages.html">
         <figure>
-      <img src="./images packages/are.jpg" alt="Bild på en skidbacke i Åre"/>
+      <img src="./images-packages/are.jpg" alt="Ski resort in Åre, Sweden">
       <figcaption> ❀ Åre ❀</figcaption>
       </a>
-        </figure>
-      </section>
+    </figure>
+  </section>
 
      <section class="Göteborg-startsida">
       <a href="packages.html">
       <figure>
-      <img src="./images packages/goteborg.jpg" alt="Bild på Liseberg"/>
+      <img src="./images-packages/goteborg.jpg" alt="Liseberg amusement park in Gothenburg">
        <figcaption>❀Göteborg❀</figcaption>
        </a>
       </figure>
      </section>
 </div>
 
-  <section class="norrsken-startsida">
+<!-- <section class="norrsken-startsida">
      <figure>
       <img src="./images-startsida/norrsken.jpg" alt="norrsken"/>
      </figure>
   </section>
+-->
+
+  </main>
+
+  <footer class="footer">
+  <div class="footer-left">
+    <h2>Triply Sweden</h2>
+    <p>© 2025 Triply Sweden. All rights reserved.</p>
+  </div>
+
+  <div class="footer-center">
+    <a href="home.html">Home</a>
+    <a href="packages.html">Services</a>
+    <a href="aboutus.html">About us</a>
+    <a href="contactus.html">Contact</a>
+    <a href="reviews.html">Reviews</a>
+  </div>
+
+  <div class="footer-right">
+    <p>Chat with us!</p>
+    <img src="./images-icons/unnamed.png" alt="Chat icon">
+  </div>
+</footer>
 
   </body>
-    <footer>
-      <h1>Triply</h1>
-    </footer>
+
   
 </html>

@@ -5,18 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Moirai+One&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Moirai+One&display=swap" rel="stylesheet">
 </head>
+
+<body>
+  
  <header>
   <div class="logos">
-   <img src="images icons/2175193.png">
-   <img src="images icons/free-instagram-logo-icon-3497-thumb.png">
-   <img src="images icons/free-youtube-icon-105-thumb.png">
-   <img src="images icons/tiktok-logo-tiktok-logo-transparent-tiktok-icon-transparent-free-free-png.webp">
-
+   <img src="./images-icons/2175193.png" alt="icon link to facebook">
+        <img src="./images-icons/free-instagram-logo-icon-3497-thumb.png" alt="icon link to Instagram">
+        <img src="./images-icons/free-youtube-icon-105-thumb.png" alt="icon link to youtube">
+        <img src="./images-icons/tiktok-logo-tiktok-logo-transparent-tiktok-icon-transparent-free-free-png.webp" alt="icon link to tiktok">
     </div>
       <h1>Triply Sweden</h1>
-      <br/>
+
+      <!-- 🔸 Dold checkbox som styr menyn -->
+      <input type="checkbox" id="menu-toggle">
+
+      <!-- 🔸 Label = hamburgarikonen -->
+      <label for="menu-toggle" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <div class="topnav">
+        <input type="text" placeholder="Search...">
+    </div>
+
+      <br>
       <nav>
         <ul>
           <li><a href="home.html">Home</a></li>
@@ -28,12 +45,76 @@
       </nav>
     </header>
 
-    <body>
+    <h2 class="contactus-title">Triply Contact Form</h2>
 
-    </body>
-    <footer>
-      <h1>Triply</h1>
-    </footer>
+  <main class="contact-page">
+    <section class="contact-form">
+      <h3>Any questions?</h3>
+      <p>Don't worry we are here for you!</p>
+      <p class="small-text">Fill in this form and we will contact you in 1–3 business days:</p>
+
+    <form>
+
+        <label for="firstname">First name:</label>
+        <input id="firstname" name="firstname" type="text" required>
+
+        <label for="email">Email:</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="phone">Phone number:</label>
+        <input id="phone" name="phone" type="tel">
+
+        <fieldset>
+    <legend>What do you need help with?</legend>
+    <div class="radio-group">
+      <label><input type="radio" name="help" value="services"> Services</label>
+      <label><input type="radio" name="help" value="company"> Company</label>
+      <label><input type="radio" name="help" value="technical"> Technical issues</label>
+      <label><input type="radio" name="help" value="other">Other</label>
+    </div>
+  </fieldset>
+
+        <label for="message">Message:</label>
+  <textarea id="message" name="message" rows="5"></textarea>
+
+  <button type="submit">Submit</button>
+</form>
+</section>
+
+    <section class="contact-info">
+      <img src="./images-contactus/triply-building-grey.png" alt="Grey business building with the name Triply Sweden on the front">
+      <div class="info-text">
+        <p><strong>Location:</strong> Fridhemsplan</p>
+        <p><strong>Address:</strong> Fridhemsgatan 16, 112 14 Stockholm</p>
+        <p><strong>Phone number:</strong> (+46) 70 345 45 90</p>
+        <p><strong>Email:</strong> triply@hotmail.com</p>
+      </div>
+
+    </section>
+
+  </main>
+
+    <footer class="footer">
+  <div class="footer-left">
+    <h2>Triply Sweden</h2>
+    <p>© 2025 Triply Sweden. All rights reserved.</p>
+  </div>
+
+  <div class="footer-center">
+    <a href="home.html">Home</a>
+    <a href="packages.html">Services</a>
+    <a href="aboutus.html">About us</a>
+    <a href="contactus.html">Contact</a>
+    <a href="reviews.html">Reviews</a>
+  </div>
+
+  <div class="footer-right">
+    <p>Chat with us!</p>
+    <img src="images-icons/unnamed.png" alt="Chat icon">
+  </div>
+</footer>
+
+</body>
     
 
 </html>
