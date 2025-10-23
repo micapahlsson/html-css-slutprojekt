@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,19 +13,18 @@
   <body>
     <header>
       <div class="logos">
-        <img src="./images-icons/2175193.png" alt="icon link to facebook">
-        <img src="./images-icons/free-instagram-logo-icon-3497-thumb.png" alt="icon link to Instagram">
-        <img src="./images-icons/free-youtube-icon-105-thumb.png" alt="icon link to youtube">
-        <img src="./images-icons/tiktok-logo-tiktok-logo-transparent-tiktok-icon-transparent-free-free-png.webp" alt="icon link to tiktok">
-   </div>
-
+        <img src="./images-icons/2175193.png" alt="Facebook">
+        <img src="images icons/free-instagram-logo-icon-3497-thumb.png" alt="Instagram">
+        <img src="images icons/free-youtube-icon-105-thumb.png" alt="Youtube">
+        <img src="images icons/tiktok-logo-tiktok-logo-transparent-tiktok-icon-transparent-free-free-png.webp" alt="TikTok">
+      </div>
 
       <h1>Triply Sweden</h1>
 
-      <!-- Dold checkbox som styr menyn -->
+      <!--  Dold checkbox som styr menyn -->
       <input type="checkbox" id="menu-toggle">
 
-      <!-- Label = hamburgarikonen -->
+      <!-- hamburgarikonen -->
       <label for="menu-toggle" class="menu-icon">
         <span></span>
         <span></span>
@@ -33,7 +32,8 @@
       </label>
 
      <div class="topnav">
-        <input type="text" placeholder="Search...">
+        <input type="text" placeholder="Search..." aria-label="Sök">
+        <button type="submit" aria-label="Sök">🔍</button>  
     </div>
 
       <nav>
@@ -49,79 +49,65 @@
 
     <main>
       <section class="packages">
-        <h1>Our packages</h1>
+        <h1>Our Packages</h1>
 
-        <!-- Kiruna -->
-        <div class="package">
+        <!--  Kiruna -->
+        <div class="package" id="kiruna">
           <div class="text">
-            <h2>Kiruna – The Northern Lights Package </h2>
+            <h2>Kiruna – The Northern Lights Package</h2>
             <h3>Price: from 4,990 SEK per person</h3>
             <h4>Experience magical nights under the Northern Lights!</h4>
-            <p>
-              Stay at the famous Icehotel in Jukkasjärvi, ride a husky sled across the snowy plains, and end the evening with a three-course dinner in the Ice Bar. 
-               An unforgettable nature experience in Sweden's northernmost town!
-            </p>
+            
             <p><strong>Includes:</strong> 2 nights at a hotel with breakfast, husky sled tour, and Northern Lights chase.</p>
             <button>Read more</button>
             <button>Book now</button>
           </div>
-          <img src="./images-packages/kiruna.jpg" alt="Northern lights in Kiruna">
+          <img src="./images-packages/kiruna.jpg" alt="Norrsken i Kiruna">
         </div>
 
-        <!-- Stockholm -->
-        <div class="package reverse">
-  <img src="./images-packages/stockholm.jpg" alt="Stockholm Archipelago" />
+<!--  Stockholm -->
+<div class="package reverse" id="stockholm">
+  <img src="./images-packages/stockholm.jpg" alt="Stockholm Archipelago">
   <div class="text">
-    <h2>Stockholm – Archipelago Adventure</h2>
+    <h2>Stockholm - Archipelago Adventure</h2>
     <h3>Price: from 3,490 SEK per person</h3>
     <h4>A summer weekend in the heart of the archipelago</h4>
-    <p>
-      Cruise between the islands, paddle a kayak, and enjoy freshly caught fish by the sea. 
-      Relax at a cozy guesthouse in Sandhamn and experience the most beautiful sides of Stockholm through boating, swimming, and nature.
-    </p>
+    
     <p><strong>Includes:</strong> 2 nights at a hotel with breakfast, boat excursion, kayaking tour, and dinner at a seaside restaurant.</p>
-    <button>Read more</button>
+    <button>Read more</button>  
     <button>Book now</button>
   </div>
 </div>
 
 <!-- Åre -->
-<div class="package">
+<div class="package" id="are">
   <div class="text">
     <h2>Åre – The Winter Package</h2>
     <h3>Price: from 5,290 SEK per person</h3>
-    <h4>Skiing, spa, and après-ski in a mountain setting</h4>
-    <p>
-      Three days filled with skiing, spa relaxation, and delicious food. 
-      Stay at Åre Mountain Lodge with full board, unwind in the sauna, and enjoy the best après-ski in the Jämtland mountains.
-    </p>
+    <h4>Skiing and spa in a mountain setting</h4>
+    
     <p><strong>Includes:</strong> 3 nights at a hotel with breakfast, ski pass, breakfast & dinner, and spa entry.</p>
     <button>Read more</button>
     <button>Book now</button>
   </div>
-  <img src="./images-packages/are.jpg" alt="Åre mountains" />
+  <img src="./images-packages/are.jpg" alt="Åre mountains">
 </div>
 
-        <!-- Göteborg -->
-        <div class="package reverse">
-          <div class="package reverse">
-            <img src="./images-packages/goteborg.jpg" alt="Gothenburg" />
-             <div class="text">
-              <h2>Gothenburg - The Family Package</h2>
-              <h3>Price: from 3,190 SEK per person</h3>
-              <h4>Fun-filled days for the whole family!</h4>
-              <p>
-                Visit Liseberg amusement park, Universeum science center, and the city aquarium. 
-                End the day with shopping in Nordstan and dinner along Avenyn. 
-                The perfect package for families looking to combine fun and relaxation.
-              </p>
-              <p><strong>Includes:</strong> 2 nights at a hotel, entrance to Liseberg & Universeum, and breakfast buffet.</p>
-              <button>Read more</button>
-              <button>Book now</button>
-            </div>
-        </div>
-      </section>
-    </main>
+<!-- Göteborg -->
+<div class="package reverse" id="goteborg">
+  <img src="./images-packages/goteborg.jpg" alt="Gothenburg">
+  <div class="text">
+    <h2>Gothenburg - The Family Package</h2>
+    <h3>Price: from 3,190 SEK per person</h3>
+    <h4>Fun-filled days for the whole family!</h4>
+    
+    <p><strong>Includes:</strong> 2 nights at a hotel, entrance to Liseberg & Universeum, and breakfast buffet.</p>
+    <button>Read more</button>
+    <button>Book now</button>
+  </div>
+</div>
+        </section>
+      </main>
 
    <footer class="footer">
   <div class="footer-left">
@@ -139,7 +125,7 @@
 
   <div class="footer-right">
     <p>Chat with us!</p>
-    <img src="./images-icons/unnamed.png" alt="Chat icon">
+    <img src="./images-icons/unnamed.png" alt="Chat icon"/>
   </div>
 </footer>
 

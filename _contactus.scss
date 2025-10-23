@@ -18,7 +18,7 @@
     border-radius: 8px;
 
     h3 {
-      font-size: 1.4rem;
+      font-size: 1.8rem;
       text-align: center;
       margin-bottom: 8px;
     }
@@ -27,9 +27,16 @@
       text-align: center;
 
       &.small-text {
-        font-size: 0.9rem;
+        font-size: 1.2rem;
         margin-bottom: 15px;
       }
+
+      &.p-contact {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+      }
+
+
     }
 
     form {
@@ -38,7 +45,8 @@
       gap: 10px;
 
       label {
-        font-weight: 500;
+        font-weight: 500; // sets the weight "boldness" of text, depends on the font-family
+        font-size: 1.2rem;
       }
 
       input,
@@ -46,7 +54,7 @@
         border: 1px solid #000000;
         padding: 8px;
         border-radius: 4px;
-        font-size: 1rem;
+        font-size: 1.3rem;
 
         &:focus {
           outline: 2px solid #b26bb2;
@@ -57,7 +65,21 @@
       .radio-group {
         display: flex;
         flex-direction: column;
-        gap: 4px;
+        gap: 6px;
+      }
+
+      label {
+        font-size: 1.1rem; //text next to radio buttons
+        font-weight: 500;
+      }
+
+      input[type="radio"] { // makes the radio buttons slightly larger
+        transform: scale(1.2);
+        margin-right: 8px;
+      }
+
+      .help-with {
+        font-size: 1.1rem;
       }
 
       button {
@@ -72,7 +94,7 @@
 
         &:hover {
           background: #944d94;
-          transform: scale(1.05);
+          transform: scale(1.05); // Button becomes a little bit bigger when hovering over it
         }
       }
     }
@@ -90,7 +112,7 @@
 
     .info-text {
       margin-top: 15px;
-      font-size: 1rem;
+      font-size: 1.2rem;
       line-height: 1.5;
     }
   }

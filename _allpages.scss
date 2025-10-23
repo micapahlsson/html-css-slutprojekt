@@ -1,4 +1,6 @@
-// HEADER (mobil först)
+
+/* Mobile Header */
+
 header {
   background-color: $rosa;
   color: $svart;
@@ -6,7 +8,7 @@ header {
   padding: 1rem;
   position: relative;
 
-  // LOGOS
+  /* Logos */
   .logos {
     display: flex;
     flex-direction: row;
@@ -19,7 +21,7 @@ header {
     }
   }
 
-  // RUBRIK
+  /* Rubrik */
   h1 {
     font-family: "Moirai One", cursive;
     font-size: 3.5rem;
@@ -30,7 +32,7 @@ header {
     margin: 0.5rem 0;
   }
 
-  // HAMBURGERMENY
+  /* Hamburger meny */
   #menu-toggle {
     display: none;
   }
@@ -57,13 +59,13 @@ header {
     }
   }
 
-  // NAVIGATION
+  /* Navigation */
   nav {
     position: absolute;
     top: 60px;
     left: 0;
     width: 100%;
-    background: $ljusrosa;
+    background: $vit;
     display: none;
     flex-direction: column;
     align-items: center;
@@ -97,48 +99,65 @@ header {
     }
   }
 
-  // När checkboxen är ikryssad → visa menyn
-  #menu-toggle:checked ~ nav {  
+  /* Visar menyn när ikryssad */
+  #menu-toggle:checked ~ nav {
     display: flex;
   }
 
-  // När checkboxen är ikryssad → animera hamburgaren till ett kryss
+  /* Hamburgare till kryss */
   #menu-toggle:checked + .menu-icon span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
   }
-
   #menu-toggle:checked + .menu-icon span:nth-child(2) {
     opacity: 0;
   }
-
   #menu-toggle:checked + .menu-icon span:nth-child(3) {
     transform: rotate(-45deg) translate(6px, -6px);
   }
 }
 
-
-/* Style the search box inside the navigation bar */
+/* Sökfält */
 .topnav {
   display: flex;
-  justify-content: flex-end; /* sprider ut innehållet */
+  justify-content: flex-end;
   position: absolute;
   padding: 10px 20px;
   top: 3px;
   right: 40px;
   width: 90%;
   box-sizing: border-box;
+
+  input[type=text] {
+    background-color: $vit;
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 17px;
+    width: 180px;
+  }
+
+  button {
+    position:absolute;
+    height: 40px;
+    top: 4px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f5f3f300;
+    color: $rosa;
+    font-family: "cormorant";
+    cursor: pointer;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background-color: $rosa;
+    }
+  }
 }
 
-/* Style the search box inside the navigation bar */
-.topnav input[type=text] {
-  padding: 6px 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 17px;
-  width: 180px;
-}
 
-// FOOTER (mobil först)
+/* Mobile Footer */
+
 .footer {
   background-color: $rosa;
   color: $svart;
@@ -151,7 +170,7 @@ header {
   gap: 1.5rem;
   border-top: 2px solid rgba(0, 0, 0, 0.1);
 
-  // Vänster sektion
+  /* Vänster sektion */
   .footer-left {
     h2 {
       font-family: "Moirai One", cursive;
@@ -168,14 +187,14 @@ header {
     }
   }
 
-  // Mittensektionen (länkar)
+  /* Mitt sektion */
   .footer-center {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
     margin-top: auto;
-   
+
     a {
       text-decoration: none;
       color: $svart;
@@ -188,13 +207,14 @@ header {
     }
   }
 
-  // Höger sektion (chat)  
+  /* Höger sektion */
   .footer-right {
     text-align: center;
 
     p {
       font-size: 1rem;
       margin-bottom: 0.3rem;
+      display: none; /* döljs på mobil */
     }
 
     img {
@@ -209,14 +229,45 @@ header {
     }
   }
 
-  // Ordning för MOBILE 
+  /* Mobil-ordning */
   .footer-right { order: 1; }
   .footer-center { order: 2; }
   .footer-left { order: 3; }
+}
 
-  // Döljer chat-texten på mobil
-  .footer-right p {
-    display: none;
+  /* Meny desktop */
+  #menu-toggle:checked ~ nav {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: $vit;
+    padding: 1.5rem 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+
+    ul {
+      flex-direction: column;
+      gap: 1.5rem;
+
+      li a { font-size: 1.4rem; }
+    }
   }
 
-}
+  /* Footer desktop */
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+
+    .footer-left { order: 1; text-align: left; }
+    .footer-center { order: 2; justify-content: center; }
+    .footer-right { order: 3; text-align: right; }
+
+    .footer-right p { display: block; } 
+  }
