@@ -209,16 +209,6 @@ header #menu-toggle:checked + .menu-icon span:nth-child(3) {
     font-size: 1.6rem;
   }
 }
-<<<<<<< HEAD
-footer h1 {
-  font-family: "Moirai One", cursive;
-  font-size: 2.5rem;
-  background: linear-gradient(45deg, #0f0f0f, #010101);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 body {
   background-color: #f3e2ed;
 }
@@ -239,8 +229,6 @@ body {
   letter-spacing: 1px;
 }
 
-=======
->>>>>>> 3c775c72b0d102a9113a2074f6e80b66d696503c
 .employee-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -260,19 +248,11 @@ body {
 }
 
 .employee img {
-<<<<<<< HEAD
   width: 100px;
   height: 100px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
-=======
-  width: 80px;
-  height: 80px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border: solid black 3px;
->>>>>>> 3c775c72b0d102a9113a2074f6e80b66d696503c
 }
 
 .employee .info {
@@ -485,31 +465,59 @@ body {
 }
 
 @media (min-width: 768px) {
-  .intro-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+  .intro-section {
+    .intro-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      img {
+        width: 900px;
+        height: 450px;
+      }
+    }
+  
+      .intro-text {
+      p {
+        font-size: 1.3em;
+        text-align: center;
+        margin-left: 30px;
+      }
+    }
+
+    h2{
+      margin-left: 70px;
+      font-size: 1.6rem;
+    }
+
+    h3 {
+      margin-left: 15%;
+      font-style: italic;
+      font-size: 1.2rem;
+    }
+
+    figcaption {
+    font-size: 20px;
+    font-family: "Cormorant";
+    text-align: center;
   }
-  .intro-container img {
-    width: 1000px;
-    height: 450px;
-    margin-right: 500px;
   }
-  .intro-text h2, p {
-    margin-left: 900px;
-    max-width: 400px;
+}
+
+  .Triply-package-title {
+  
+  h2{
+  font-size: 1.3rem;
   }
-  .norrsken-startsida img {
-    width: 1520px;
-    height: 250px;
-    border-radius: 0px;
-  }
+}
+
+  @media (min-width: 768px) {
   .cities-row img {
     width: 260px;
     height: 200px;
   }
 }
+
 .packages {
   display: flex;
   flex-direction: column;
@@ -668,7 +676,6 @@ button:hover {
 
 .review-text {
   word-wrap: break-word;
-<<<<<<< HEAD
 }
 
 @media (min-width: 768px) {
@@ -726,6 +733,4 @@ button:hover {
     font-size: 0.95rem;
     color: #444;
   }
-=======
->>>>>>> 3c775c72b0d102a9113a2074f6e80b66d696503c
 }/*# sourceMappingURL=style.css.map */

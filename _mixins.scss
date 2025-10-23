@@ -1,6 +1,5 @@
 // mixins lades till 17/10
 
-<<<<<<< HEAD
 @mixin flex-center-row-wrap {
   display: flex;
   flex-direction: row;
@@ -8,7 +7,6 @@
   justify-content: center;
   align-items: center;
 }
-=======
 @mixin cities-startsida($width: 160px, $height: 100px) {
   width: $width;
   height: $height;
@@ -17,4 +15,3 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.5s ease;  
 } 
->>>>>>> 3c775c72b0d102a9113a2074f6e80b66d696503c
