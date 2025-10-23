@@ -437,8 +437,8 @@ body {
   gap: 20px;
   padding: 10px;
 }
-.intro-section img {
-  width: 500px;
+.intro-section .intro-container img {
+  width: 200px;
   height: 400px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -756,7 +756,7 @@ body {
   flex-direction: row;
 }
 .intro-section .intro-container img {
-  width: 800px;
+  width: 650px;
   height: 450px;
   margin: 0;
   flex-shrink: 0;
@@ -771,7 +771,7 @@ body {
   font-size: 2rem;
 }
 .intro-section .intro-container h3 {
-  margin-left: 17%;
+  margin-left: 15%;
   font-style: italic;
   font-size: 1.4rem;
 }
@@ -786,8 +786,8 @@ body {
 }
 
 .cities-row img {
-  width: 260px;
-  height: 200px;
+  width: 200px;
+  height: 160px;
 }
 
 /* ---------------- ABOUT US PAGE ---------------- */
@@ -876,15 +876,4 @@ body {
 }
 .footer .footer-right p {
   display: block;
-}
-
-/*  TABLET-ANPASSNING (max 1254px) */
-@media (max-width: 1254px) {
-  .intro-section .intro-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-  }
 }/*# sourceMappingURL=style.css.map */

@@ -149,15 +149,14 @@
   }
 }
 
-
-  /* ---------------- HOME PAGE ---------------- */
+ /* ---------------- HOME PAGE ---------------- */
  .intro-section {
   .intro-container {
     display: flex;
     flex-direction: row;
 
     img {
-      width: 800px;
+      width: 650px;
       height: 450px;
       margin: 0;
       flex-shrink: 0;
@@ -177,7 +176,7 @@
     }
 
     h3 {
-      margin-left: 17%;
+      margin-left: 15%;
       font-style: italic;
       font-size: 1.4rem;
     }
@@ -198,8 +197,8 @@
 }
 
   .cities-row img {
-    width: 260px;
-    height: 200px;
+    width: 200px;
+    height: 160px;
   }
 
 
@@ -308,16 +307,3 @@
       }
     }
   }
-
-/*  TABLET-ANPASSNING (max 1254px) */
-@media (max-width: 1254px) {
-  .intro-section {
-    .intro-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-    }
-  }
-}
