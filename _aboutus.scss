@@ -1,7 +1,27 @@
 
+body {
+  background-color: #f3e2ed;
+}
+
+.intro_1 {
+  font-size: x-large;
+}
+
+.aboutus-main p {
+  font-size: x-large
+}
+
+.employee_title {
+  font-size: 2.2em;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
 .employee-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr; // single column for mobile 
   gap: 30px;
   margin-top: 40px;
   max-width: 900px;
@@ -11,15 +31,17 @@
 
 .employee {
   display: flex;
-  align-items: flex-start;
-  gap: 15px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
 }
 
 .employee img {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
-  border: solid black 3px;
+  border-radius: 50%;
 }
 
 .employee .info {
@@ -50,20 +72,7 @@
 
 @media (min-width: 768px) {
   .employee-grid {
-    display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    max-width: 900px;
   }
+}
 
-  .employee {
-    flex-direction: row;
-    align-items: flex-start;
-    text-align: left;
-  }
-
-  .employee img {
-    margin-right: 15px;
-    margin-bottom: 0;
-  }
- }
