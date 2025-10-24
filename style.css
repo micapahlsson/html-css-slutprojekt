@@ -329,106 +329,109 @@ body {
   max-width: 800px;
 }
 
-.contactus-title {
-  text-align: center;
-  font-size: 2rem;
-  margin: 20px 0;
-}
-
+/* CONTACT PAGE */
 .contact-page {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
   padding: 20px;
 }
 .contact-page .contact-form {
   background: #e3bde3;
-  padding: 20px;
+  padding: 15px;
   border: 1px solid #000000;
-  border-radius: 8px;
+}
+.contact-page .contact-form h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 5px;
 }
 .contact-page .contact-form h3 {
-  font-size: 1.8rem;
   text-align: center;
-  margin-bottom: 8px;
 }
 .contact-page .contact-form p {
   text-align: center;
 }
 .contact-page .contact-form p.small-text {
-  font-size: 1.2rem;
-  margin-bottom: 15px;
-}
-.contact-page .contact-form p.p-contact {
-  font-size: 1.2rem;
+  font-size: 14px;
   margin-bottom: 15px;
 }
 .contact-page .contact-form form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-}
-.contact-page .contact-form form label {
-  font-weight: 500;
-  font-size: 1.2rem;
+  gap: 8px;
 }
 .contact-page .contact-form form input,
 .contact-page .contact-form form textarea {
   border: 1px solid #000000;
-  padding: 8px;
-  border-radius: 4px;
-  font-size: 1.3rem;
-}
-.contact-page .contact-form form input:focus,
-.contact-page .contact-form form textarea:focus {
-  outline: 2px solid #b26bb2;
-  background: #fff8ff;
+  padding: 6px;
+  border-radius: 3px;
 }
 .contact-page .contact-form form .radio-group {
   display: flex;
   flex-direction: column;
-  gap: 6px;
-}
-.contact-page .contact-form form label {
-  font-size: 1.1rem;
-  font-weight: 500;
-}
-.contact-page .contact-form form input[type=radio] {
-  transform: scale(1.2);
-  margin-right: 8px;
-}
-.contact-page .contact-form form .help-with {
-  font-size: 1.1rem;
+  gap: 4px;
 }
 .contact-page .contact-form form button {
   align-self: flex-end;
   background: #b26bb2;
   color: #ffffff;
   border: none;
-  border-radius: 4px;
-  padding: 8px 14px;
+  padding: 6px 12px;
   cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s ease;
 }
 .contact-page .contact-form form button:hover {
   background: #944d94;
-  transform: scale(1.05);
 }
 .contact-page .contact-info {
+  margin-top: 30px;
   text-align: center;
 }
 .contact-page .contact-info img {
   width: 100%;
   max-width: 350px;
   border: 1px solid #000000;
-  border-radius: 8px;
 }
 .contact-page .contact-info .info-text {
   margin-top: 15px;
-  font-size: 1.2rem;
-  line-height: 1.5;
+  font-size: 15px;
+  line-height: 1.4;
 }
 
+/* FOOTER */
+.footer {
+  background: #b26bb2;
+  color: #000000;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footer-left .footer-logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+.footer .footer-chat {
+  text-align: right;
+  font-size: 14px;
+}
+
+/* MEDIA QUERIES (DESKTOP) */
+@media (min-width: 768px) {
+  .contact-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 30px;
+    padding: 40px;
+  }
+  .contact-page .contact-form h2 {
+    font-size: 26px;
+  }
+  .contact-page .contact-info {
+    text-align: left;
+  }
+  .contact-page .contact-info img {
+    width: 100%;
+  }
+}
 .intro-section .intro-container {
   display: flex;
   flex-direction: column;
@@ -437,29 +440,36 @@ body {
   gap: 20px;
   padding: 10px;
 }
-.intro-section .intro-container img {
-  width: 200px;
-  height: 400px;
+.intro-section img {
+  width: 550px;
+  height: 275px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
+}
+.intro-section figcaption {
+  text-align: left;
+  margin-left: 5px;
+  font-size: 0.8rem;
 }
 
 .intro-text h2 {
   text-align: center;
   font-family: "Cormorant";
-  font-size: 1.2rem;
-}
-.intro-text p {
-  text-align: center;
-  font-size: medium;
-  width: 400px;
-  font-size: 1.2rem;
+  font-size: 1.9rem;
+  margin-bottom: 40px;
 }
 .intro-text h3 {
   text-align: center;
+  font-size: 1.3rem;
   font-style: italic;
-  font-size: 1.5rem;
+}
+.intro-text p {
+  text-align: center;
+  font-style: normal;
+  font-size: medium;
+  width: 500px;
+  font-size: 1.2rem;
 }
 
 .Triply-package-title h2 {
@@ -471,6 +481,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 10px;
 }
 .cities-row a {
   text-decoration: none;
@@ -485,10 +496,9 @@ body {
   transition: all 0.5s ease;
 }
 .cities-row figcaption {
-  font-size: 1.2rem;
+  font-size: 13px;
   font-family: "Cormorant";
   text-align: center;
-  color: black;
 }
 .cities-row a:hover img {
   transform: scale(1.1);
@@ -501,72 +511,7 @@ body {
   transition: 0.3s ease;
 }
 
-.norrsken-startsida {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.norrsken-startsida img {
-  width: 560px;
-  height: 150px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-@media (min-width: 768px) {
-  .intro-section {
-    .intro-container {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-
-      img {
-        width: 900px;
-        height: 450px;
-      }
-    }
-  
-      .intro-text {
-      p {
-        font-size: 1.3em;
-        text-align: center;
-        margin-left: 30px;
-      }
-    }
-
-    h2{
-      margin-left: 70px;
-      font-size: 1.6rem;
-    }
-
-    h3 {
-      margin-left: 15%;
-      font-style: italic;
-      font-size: 1.2rem;
-    }
-
-    figcaption {
-    font-size: 20px;
-    font-family: "Cormorant";
-    text-align: center;
-  }
-  }
-}
-
-  .Triply-package-title {
-  
-  h2{
-  font-size: 1.3rem;
-  }
-}
-
-  @media (min-width: 768px) {
-  .cities-row img {
-    width: 260px;
-    height: 200px;
-  }
-}
-
+/* Mobil */
 .packages {
   display: flex;
   flex-direction: column;
@@ -814,131 +759,137 @@ body {
   .packages .package.reverse {
     flex-direction: row-reverse;
   }
-}
-/* ---------------- HOME PAGE ---------------- */
-.intro-section .intro-container {
-  display: flex;
-  flex-direction: row;
-}
-.intro-section .intro-container img {
-  width: 650px;
-  height: 450px;
-  margin: 0;
-  flex-shrink: 0;
-}
-.intro-section .intro-container .intro-text p {
-  font-size: 1.4rem;
-  text-align: center;
-  margin-left: 85px;
-}
-.intro-section .intro-container h2 {
-  margin-left: 70px;
-  font-size: 2rem;
-}
-.intro-section .intro-container h3 {
-  margin-left: 15%;
-  font-style: italic;
-  font-size: 1.4rem;
-}
-.intro-section .intro-container figcaption {
-  font-size: 20px;
-  font-family: "Cormorant";
-  text-align: center;
-}
-
-.Triply-package-title h2 {
-  margin-bottom: 40px;
-}
-
-.cities-row img {
-  width: 200px;
-  height: 160px;
-}
-
-/* ---------------- ABOUT US PAGE ---------------- */
-.employee-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 2 rem;
-}
-.employee-grid .employee {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #fdfdfd;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  padding: 1rem;
-  transition: transform 0.2s ease;
-}
-.employee-grid .employee:hover {
-  transform: translateY(-5px);
-}
-.employee-grid .employee img {
-  width: 100%;
-  height: auto;
-  max-width: 330px;
-  border-radius: 10px;
-  margin-bottom: 0.6rem;
-}
-.employee-grid .employee .info {
-  text-align: center;
-}
-.employee-grid .employee .info h3 {
-  font-size: 1.4rem;
-  margin-bottom: 0.2rem;
-}
-.employee-grid .employee .info p {
-  font-size: 1.1rem;
-  line-height: 1.3;
-  margin: 0.1rem 0;
-}
-
-/* ---------------- CONTACT PAGE ---------------- */
-.contact-page {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 20px;
-}
-.contact-page .contact-form,
-.contact-page .contact-info {
-  flex: 1 1 400px;
-  max-width: 500px;
-}
-.contact-page .contact-info {
-  text-align: center;
-}
-.contact-page .contact-info img {
-  display: block;
-  margin: 0 auto 15px auto;
-}
-
-/* ---------------- FOOTER ---------------- */
-.footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  text-align: left;
-}
-.footer .footer-left {
-  order: 1;
-  text-align: left;
-}
-.footer .footer-center {
-  order: 2;
-  justify-content: center;
-}
-.footer .footer-right {
-  order: 3;
-  text-align: right;
-}
-.footer .footer-right p {
-  display: block;
+  /* ---------------- HOME PAGE ---------------- */
+  .intro-section .intro-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    align-items: left;
+    text-align: left;
+  }
+  .intro-section .intro-container img {
+    width: 760px;
+    height: 450px;
+  }
+  .intro-section .intro-container figcaption {
+    font-size: 0.8rem;
+    margin-right: 85%;
+  }
+  .intro-section .intro-text p {
+    font-size: 1.3em;
+    margin-left: 30px;
+    text-align: center;
+    width: 450px;
+  }
+  .intro-section h2 {
+    font-size: 1.9rem;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 15px;
+  }
+  .intro-section h3 {
+    text-align: center;
+    margin-left: 5%;
+    font-style: italic;
+    font-size: 1.2rem;
+  }
+  .intro-section figcaption {
+    font-size: 20px;
+    font-family: "Cormorant";
+    text-align: center;
+  }
+  .Triply-package-title h2 {
+    font-size: 1.5rem;
+  }
+  .cities-row img {
+    width: 260px;
+    height: 200px;
+  }
+  /* ---------------- ABOUT US PAGE ---------------- */
+  .employee-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2 rem;
+  }
+  .employee-grid .employee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 1rem;
+    transition: transform 0.2s ease;
+  }
+  .employee-grid .employee:hover {
+    transform: translateY(-5px);
+  }
+  .employee-grid .employee img {
+    width: 100%;
+    height: auto;
+    max-width: 330px;
+    border-radius: 10px;
+    margin-bottom: 0.6rem;
+  }
+  .employee-grid .employee .info {
+    text-align: center;
+  }
+  .employee-grid .employee .info h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.2rem;
+  }
+  .employee-grid .employee .info p {
+    font-size: 1.1rem;
+    line-height: 1.3;
+    margin: 0.1rem 0;
+  }
+  /* ---------------- CONTACT PAGE ---------------- */
+  .contact-page {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+  }
+  .contact-page .contact-form,
+  .contact-page .contact-info {
+    flex: 1 1 400px;
+    max-width: 500px;
+  }
+  .contact-page .contact-info {
+    text-align: center;
+  }
+  .contact-page .contact-info img {
+    display: block;
+    margin: 0 auto 15px auto;
+  }
+  /* ---------------- FOOTER ---------------- */
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .footer .footer-left {
+    order: 1;
+    text-align: left;
+  }
+  .footer .footer-center {
+    order: 2;
+    justify-content: center;
+  }
+  .footer .footer-right {
+    order: 3;
+    text-align: right;
+  }
+  .footer .footer-right p {
+    display: block;
+  }
 }/*# sourceMappingURL=style.css.map */
