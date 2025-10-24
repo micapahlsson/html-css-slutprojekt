@@ -1,117 +1,78 @@
+
+/* Mobil */
 .packages {
   display: flex;
   flex-direction: column;
   gap: 3rem;
   padding: 2rem 4rem;
 
+  /* Rubrik */
   h1 {
     text-align: center;
+    padding-bottom: 2rem;    
+    margin-bottom: 2rem;
+    border-bottom: 3px solid $ljusrosa;
   }
 
+  /* paket box */
   .package {
     display: flex;
+    flex-direction: column; /* mobil: bild ovanför text */
     align-items: center;
     gap: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 3px solid $ljusrosa;
 
+    
     img {
-      width: 50%;
-      min-width: 200px;
-      min-height: 200px;
+      width: 100%;
+      max-width: 450px;
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      margin: 0 auto 1rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
+   
     .text {
-      width: 50%;
+      width: 100%;
+      text-align: left;
       font-family: "cormorant";
       color: #000;
 
       h2 {
         color: $svart;
         margin-bottom: 1rem;
+        font-size: 1.5rem;
       }
+
       p {
         font-size: 1rem;
         line-height: 1.6;
       }
+
+      button {
+        background: $rosa;
+        border: none;
+        color: $svart;
+        font-family: "cormorant";
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        margin-top: 0.5rem;
+        cursor: pointer;
+        transition: background 0.3s ease;
+
+        &:hover {
+          background: darken($rosa, 10%);
+        }
+      }
     }
 
     &.reverse {
-      flex-direction: row;
+      flex-direction: column-reverse;
     }
   }
 }
 
-button {
-  background: $rosa;
-  border: none;
-  color: $svart;
-  font-family: "cormorant";
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  margin-top: 0.5rem;
-  cursor: pointer;
 
-  &:hover {
-    background: darken($rosa, 10%);
-  }
-}
-/* 💻 Desktop */
-@media (min-width: 768px) {
-  .packages {
-    padding: 4rem 8rem;
-    gap: 5rem;
-
-    h1 {
-      font-size: 2.5rem;
-      letter-spacing: 1px;
-    }
-
-    .package {
-      gap: 4rem;
-
-      img {
-        width: 45%;
-        max-width: 550px;
-        border-radius: 20px;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-        &:hover {
-          transform: scale(1.03);
-          box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
-        }
-      }
-
-      .text {
-        width: 55%;
-
-        h2 {
-          font-size: 2rem;
-          margin-bottom: 1rem;
-        }
-
-        p {
-          font-size: 1.1rem;
-          line-height: 1.8;
-          color: #333;
-        }
-
-        button {
-          padding: 0.7rem 1.5rem;
-          margin-right: 1rem;
-          font-size: 1rem;
-          transition: transform 0.2s ease;
-
-          &:hover {
-            transform: translateY(-2px);
-          }
-        }
-      }
-
-      &.reverse {
-        flex-direction: row-reverse;
-      }
-    }
-  }
-}

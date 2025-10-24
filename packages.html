@@ -1,36 +1,40 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Triply Sweden</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Moirai+One&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet">
   </head>
 
   <body>
     <header>
       <div class="logos">
-        <img src="images icons/2175193.png" />
-        <img src="images icons/free-instagram-logo-icon-3497-thumb.png" />
-        <img src="images icons/free-youtube-icon-105-thumb.png" />
-        <img src="images icons/tiktok-logo-tiktok-logo-transparent-tiktok-icon-transparent-free-free-png.webp"/>
+        <img src="./images-icons/2175193.png" alt="Facebook">
+        <img src="./images-icons/free-instagram-logo-icon-3497-thumb.png" alt="Instagram">
+        <img src="./images-icons/free-youtube-icon-105-thumb.png" alt="Youtube">
+        <img src="./images-icons/tiktok-logo-tiktok-logo-transparent-tiktok-icon-transparent-free-free-png.webp" alt="TikTok">
       </div>
 
       <h1>Triply Sweden</h1>
 
-      <!-- 🔸 Dold checkbox som styr menyn -->
-      <input type="checkbox" id="menu-toggle" />
+      <!--  Dold checkbox som styr menyn -->
+      <input type="checkbox" id="menu-toggle">
 
-      <!-- 🔸 Label = hamburgarikonen -->
+      <!-- hamburgarikonen -->
       <label for="menu-toggle" class="menu-icon">
         <span></span>
         <span></span>
         <span></span>
       </label>
+
+     <div class="topnav">
+        <input type="text" placeholder="Search..." aria-label="Sök">
+        <button type="submit" aria-label="Sök">🔍</button>  
+    </div>
 
       <nav>
         <ul>
@@ -45,82 +49,65 @@
 
     <main>
       <section class="packages">
-        <h1>Våra paket</h1>
+        <h1>Our Packages</h1>
 
-        <!-- 🔹 Kiruna -->
-        <div class="package">
+        <!--  Kiruna -->
+        <div class="package" id="kiruna">
           <div class="text">
-            <h2>Kiruna – Norrskenspaketet</h2>
-            <h3>Pris: från 4 990 kr per person</h3>
-            <h4>Upplev magiska nätter under norrskenet!</h4>
-            <p>
-              Bo på det berömda Ishotellet i Jukkasjärvi, åk hundspann över de
-              snötäckta vidderna och avsluta kvällen med en trerättersmiddag i
-              isbaren. En oförglömlig naturupplevelse i Sveriges nordligaste
-              stad!
-            </p>
-            <p><strong>Ingår:</strong> 2 nätter på hotell med frukost, hundspannstur, norrskensjakt.</p>
-            <button>Läs mer</button>
-            <button>Boka nu</button>
+            <h2>Kiruna – The Northern Lights Package</h2>
+            <h3>Price: from 4,990 SEK per person</h3>
+            <h4>Experience magical nights under the Northern Lights!</h4>
+            
+            <p><strong>Includes:</strong> 2 nights at a hotel with breakfast, husky sled tour, and Northern Lights chase.</p>
+            <button>Read more</button>
+            <button>Book now</button>
           </div>
-          <img src="images packages/kiruna.jpg" alt="Norrsken i Kiruna" />
+          <img src="./images-packages/kiruna.jpg" alt="Norrsken i Kiruna">
         </div>
 
-        <!-- 🔹 Stockholm -->
-        <div class="package reverse">
-          <img src="images packages/stockholm.jpg" alt="Stockholms skärgård" />
-          <div class="text">
-            <h2>Stockholm – Skärgårdsäventyr</h2>
-            <h3>Pris: från 3 490 kr per person</h3>
-            <h4>En sommarweekend i hjärtat av skärgården</h4>
-            <p>
-              Kryssa mellan öarna, paddla kajak och njut av färsk fisk vid
-              havet. Koppla av på ett mysigt pensionat i Sandhamn och upplev
-              Stockholms vackraste sidor med båt, bad och natur.
-            </p>
-            <p><strong>Ingår:</strong> 2 nätter på hotell med frukost, båtutflykt, kajaktur, middag på skärgårdskrog.</p>
-            <button>Läs mer</button>
-            <button>Boka nu</button>
-          </div>
-        </div>
+<!--  Stockholm -->
+<div class="package reverse" id="stockholm">
+  <img src="./images-packages/stockholm.jpg" alt="Stockholm Archipelago">
+  <div class="text">
+    <h2>Stockholm - Archipelago Adventure</h2>
+    <h3>Price: from 3,490 SEK per person</h3>
+    <h4>A summer weekend in the heart of the archipelago</h4>
+    
+    <p><strong>Includes:</strong> 2 nights at a hotel with breakfast, boat excursion, kayaking tour, and dinner at a seaside restaurant.</p>
+    <button>Read more</button>  
+    <button>Book now</button>
+  </div>
+</div>
 
-        <!-- 🔹 Åre -->
-        <div class="package">
-          <div class="text">
-            <h2>Åre – Vinterpaketet</h2>
-            <h3>Pris: från 5 290 kr per person</h3>
-            <h4>Skidåkning, spa och after ski i fjällmiljö</h4>
-            <p>
-              Tre dagar fyllda med skidåkning, spa och god mat. Bo på Åre
-              Mountain Lodge med helpension, koppla av i bastun och njut av den
-              bästa after skin i Jämtlands fjäll.
-            </p>
-            <p><strong>Ingår:</strong> 3 nätter på hotell med frukost, liftkort, frukost & middag, spa-entré.</p>
-            <button>Läs mer</button>
-            <button>Boka nu</button>
-          </div>
-          <img src="images packages/are.jpg" alt="Åre fjäll" />
-        </div>
+<!-- Åre -->
+<div class="package" id="are">
+  <div class="text">
+    <h2>Åre – The Winter Package</h2>
+    <h3>Price: from 5,290 SEK per person</h3>
+    <h4>Skiing and spa in a mountain setting</h4>
+    
+    <p><strong>Includes:</strong> 3 nights at a hotel with breakfast, ski pass, breakfast & dinner, and spa entry.</p>
+    <button>Read more</button>
+    <button>Book now</button>
+  </div>
+  <img src="./images-packages/are.jpg" alt="Åre mountains">
+</div>
 
-        <!-- 🔹 Göteborg -->
-        <div class="package reverse">
-          <img src="images packages/goteborg.jpg" alt="Göteborg" />
-          <div class="text">
-            <h2>Göteborg – Familjepaketet</h2>
-            <h3>Pris: från 3 190 kr per person</h3>
-            <h4>Roliga dagar för hela familjen!</h4>
-            <p>
-              Besök Liseberg, Universeum och stadens akvarium. Avsluta dagen med
-              shopping i Nordstan och middag på Avenyn. Ett perfekt paket för
-              barnfamiljer som vill kombinera nöje och avkoppling.
-            </p>
-            <p><strong>Ingår:</strong> 2 nätter på hotell, entré till Liseberg & Universeum, frukostbuffé.</p>
-            <button>Läs mer</button>
-            <button>Boka nu</button>
-          </div>
-        </div>
-      </section>
-    </main>
+<!-- Göteborg -->
+<div class="package reverse" id="goteborg">
+  <img src="./images-packages/goteborg.jpg" alt="Gothenburg">
+  <div class="text">
+    <h2>Gothenburg - The Family Package</h2>
+    <h3>Price: from 3,190 SEK per person</h3>
+    <h4>Fun-filled days for the whole family!</h4>
+    
+    <p><strong>Includes:</strong> 2 nights at a hotel, entrance to Liseberg & Universeum, and breakfast buffet.</p>
+    <button>Read more</button>
+    <button>Book now</button>
+  </div>
+</div>
+        </section>
+      </main>
 
    <footer class="footer">
   <div class="footer-left">
@@ -138,7 +125,7 @@
 
   <div class="footer-right">
     <p>Chat with us!</p>
-    <img src="images icons/unnamed.png" alt="Chat icon" />
+    <img src="./images-icons/unnamed.png" alt="Chat icon"/>
   </div>
 </footer>
 

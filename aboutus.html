@@ -13,14 +13,29 @@
   <body>
     <header>
       <div class="logos">
-   <img src="images icons/2175193.png">
-   <img src="images icons/free-instagram-logo-icon-3497-thumb.png">
-   <img src="images icons/free-youtube-icon-105-thumb.png">
-   <img src="images icons/tiktok-logo-tiktok-logo-transparent-tiktok-icon-transparent-free-free-png.webp">
-
+         <img src="./images-icons/2175193.png" alt="icon link to facebook">
+        <img src="./images-icons/free-instagram-logo-icon-3497-thumb.png" alt="icon link to Instagram">
+        <img src="./images-icons/free-youtube-icon-105-thumb.png" alt="icon link to youtube">
+        <img src="./images-icons/tiktok-logo-tiktok-logo-transparent-tiktok-icon-transparent-free-free-png.webp" alt="icon link to tiktok">
     </div>
       <h1>Triply Sweden</h1>
-      <br/>
+
+      <!-- Dold checkbox som styr menyn -->
+      <input type="checkbox" id="menu-toggle">
+
+      <!-- Label = hamburgarikonen -->
+      <label for="menu-toggle" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <div class="topnav">
+        <input type="text" placeholder="Search...">
+        <button type="submit" aria-label="Sök">🔍</button>
+    </div>
+      
+      <br>
       <nav>
         <ul>
           <li><a href="home.html">Home</a></li>
@@ -33,27 +48,27 @@
     </header>
 
     <main class="aboutus-main">
-      <h1>❀ About Triply Sweden ❀</h1>
-      <p class="slogan_aboutous">“Travel with ease, leave the planning to us !”</p>
+      <h1> About Triply Sweden 𐦂𖨆𐀪𖠋𐀪𐀪 </h1>
+      <p class="slogan_aboutous">“Travel with ease, leave the planning to us!”</p>
 
     <section class="intro_1">
       <p>
-          Tina Jones founded Triply in 2017 after visiting Sweden and <br/>
-          not finding enough trip advisors to help her fulfill her desire. <br />
-          She wanted to explore Sweden in the way she knew she could. This <br/>
-          inspired her to come together with her 5 employees, and <br/>
-          now dear friends, to create a space where travelers, as well as <br/>
-          locals, could find fun ideas and pre planned out trips to <br/>
-          make the most of their time in Sweden!<br/>
+          Tina Jones founded Triply in 2017 after visiting Sweden and <br>
+          not finding enough trip advisors to help her fulfill her desire. <br>
+          She wanted to explore Sweden in the way she knew she could. This <br>
+          inspired her to come together with her 5 employees, and <br>
+          now dear friends, to create a space where travelers, as well as <br>
+          locals, could find fun ideas and pre planned out trips to <br>
+          make the most of their time in Sweden!<br>
       </p>
     </section>
 
     <section class="intro_1">
       <p>
-          Tina Jones - <br/>
-          "Sweden might be a small country, but it's filled with <br/>
-          beauty and so much to offer. I want tourists, and even locals, <br/>
-          to see more of what the country has to offer. This is why I <br/>
+          Tina Jones - <br>
+          "Sweden might be a small country, but it's filled with <br>
+          beauty and so much to offer. I want tourists, and even locals, <br>
+          to see more of what the country has to offer. This is why I <br>
           started Triply Sweden!"
       </p>
     </section>
@@ -64,7 +79,7 @@
 
       <section class="employee-grid">
         <div class="employee">
-        <img src="./AI staff/person1.webp" alt="A picture of a woman who is the founder of Triply">
+        <img src="./AI-staff/person1.webp" alt="A picture of a woman who is the founder of Triply">
           <div class="info">
             <h3>Tina Jones</h3>
             <p>CEO</p>
@@ -74,7 +89,7 @@
         </div>
 
         <div class="employee">
-          <img src="./AI staff/person2.webp" alt="A picture of a young woman who is an employee at Triply">
+          <img src="./AI-staff/person2.webp" alt="A picture of a young woman who is an employee at Triply">
           <div class="info">
            <h3>Lucy Chen</h3>
             <p>Vice CEO</p>
@@ -84,7 +99,7 @@
         </div>
 
         <div class="employee">
-          <img src="./AI staff/person3.webp" alt="A picture of a person who is an employee at Triply">
+          <img src="./AI-staff/person3.webp" alt="A picture of a person who is an employee at Triply">
           <div class="info">
             <h3>Alex Turner</h3>
             <p>Customer service and Tech support</p>
@@ -94,7 +109,7 @@
         </div>
 
         <div class="employee">
-          <img src="./AI staff/person4.webp" alt="A picture of a middle age man with glasses who is an employee at Triply">
+          <img src="./AI-staff/person4.webp" alt="A picture of a middle age man with glasses who is an employee at Triply">
           <div class="info">
             <h3>Martin Morning</h3>
             <p>Digital marketing specialist</p>
@@ -104,7 +119,7 @@
         </div>
 
         <div class="employee">
-          <img src="./AI staff/person5.jpg" alt="A picture of a middle age man that is an employee at Triply">
+          <img src="./AI-staff/person5.jpg" alt="A picture of a middle age man that is an employee at Triply">
           <div class="info">
             <h3>Peter Ingvar</h3>
             <p>Finance/accounting</p>
@@ -114,7 +129,7 @@
         </div>
 
         <div class="employee">
-          <img src="./AI staff/person6.webp" alt="A picture of a middle age man with glasses and a beard that is an employee at Triply">
+          <img src="./AI-staff/person6.webp" alt="A picture of a middle age man with glasses and a beard that is an employee at Triply">
           <div class="info">
             <h3>Morgan Matthew</h3>
             <p>Legal & Compliance</p>
@@ -125,8 +140,25 @@
       </section>
     </main>
 
-    <footer>
-      <h1>Triply</h1>
-    </footer>
+    <footer class="footer">
+  <div class="footer-left">
+    <h2>Triply Sweden</h2>
+    <p>© 2025 Triply Sweden. All rights reserved.</p>
+  </div>
+
+  <div class="footer-center">
+    <a href="home.html">Home</a>
+    <a href="packages.html">Services</a>
+    <a href="aboutus.html">About us</a>
+    <a href="contactus.html">Contact</a>
+    <a href="reviews.html">Reviews</a>
+  </div>
+
+  <div class="footer-right">
+    <p>Chat with us!</p>
+    <img src="./images-icons/unnamed.png" alt="Chat icon">
+  </div>
+</footer>
+
   </body>
 </html>
